@@ -1,0 +1,33 @@
+{
+  "name": "aoc2021",
+  "version": "1.0.0",
+  "description": "Resolution of problems for the advent of code 2021",
+  "main": "dist/index.js",
+  "scripts": {
+    "lint": "eslint src/**/*.ts --fix",
+    "start": "cross-var tsup ./src/solutions/aoc-$npm_config_day/index.ts && node ./dist/index.js",
+    "watch": "concurrently \"npm run watch:js\" \"npm run watch:ts\"",
+    "watch:js": "nodemon -q --watch ./dist/index.js ./dist",
+    "watch:ts": "cross-var tsup ./src/solutions/aoc-$npm_config_day/index.ts --watch src",
+    "new": "sh ./scripts/new.sh",
+    "get-data": "sh ./scripts/fetch-data.sh",
+    "init": "sh ./scripts/init.sh"
+  },
+  "author": "Timothée Fermeaux (fermeaux.t@gmail.com)",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^16.11.11",
+    "@typescript-eslint/eslint-plugin": "^5.5.0",
+    "@typescript-eslint/parser": "^5.5.0",
+    "concurrently": "^6.4.0",
+    "cross-var": "^1.1.0",
+    "eslint": "^7.32.0",
+    "eslint-config-standard": "^16.0.3",
+    "eslint-plugin-import": "^2.25.3",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^5.1.1",
+    "nodemon": "^2.0.15",
+    "tsup": "^5.10.0",
+    "typescript": "^4.5.2"
+  }
+}
