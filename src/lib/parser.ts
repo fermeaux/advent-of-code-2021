@@ -10,3 +10,7 @@ export function parseFile (day: string, fileName: string = 'data'): string {
   }
   return ''
 }
+
+export function parseLine (line: string, regex: RegExp): Record<string, any> {
+  return { ...({ ...regex.exec(line) }).groups }
+}

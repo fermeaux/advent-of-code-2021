@@ -1,8 +1,5 @@
 import { Logger } from '../../lib/log'
-import { parseFile } from '../../lib/parser'
-
-const day = '{{day}}'
-const testing = false
+import { parseFile, parseLine } from '../../lib/parser'
 
 class Resolver {
   day: string
@@ -17,12 +14,11 @@ class Resolver {
 
   solve1 () {
     const logger = new Logger(`Day${this.day}-1`)
-    logger.info('lines', this.lines)
-    // const values = {}
-    // this.lines.forEach(line => {
-    //   const { name } = /(?<name>.+)/.exec(line).groups
-    //   values[name] = 0
-    // })
+    const values = {}
+    this.lines.forEach(line => {
+      const { name } = parseLine(line, /(?<name>.+)/)
+      values[name] = 0
+    })
 
     const result = 0
     logger.result(result)
@@ -35,6 +31,9 @@ class Resolver {
     logger.result(result)
   }
 }
+
+const day = '{{day}}'
+const testing = false
 
 const resolver = new Resolver({ day, testing })
 resolver.solve1()

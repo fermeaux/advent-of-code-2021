@@ -50,11 +50,18 @@ Here you will find all my results for this year.
     </thead>
     <tbody>
         <tr>
-            <td align="right">1</td>
+            <td align="right">01</td>
             <td align="center">00:03:50</td>
             <td align="right">2050</td>
             <td align="center">00:08:11</td>
             <td align="right">1737</td>
+        </tr>
+        <tr>
+            <td align="right">02</td>
+            <td align="center">00:07:45</td>
+            <td align="right">5445</td>
+            <td align="center">00:12:46</td>
+            <td align="right">5567</td>
         </tr>
     </tbody>
 </table>

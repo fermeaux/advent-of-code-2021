@@ -1,9 +1,6 @@
 import { Logger } from '../../lib/log'
 import { parseFile } from '../../lib/parser'
 
-const day = '01'
-const testing = false
-
 class Resolver {
   day: string
   file: string
@@ -47,6 +44,9 @@ class Resolver {
     logger.result(result)
   }
 }
+
+const day = '01'
+const testing = false
 
 const resolver = new Resolver({ day, testing })
 resolver.solve1()
