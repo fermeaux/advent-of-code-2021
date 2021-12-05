@@ -77,5 +77,12 @@ Here you will find all my results for this year.
             <td align="center">00:56:49</td>
             <td align="right">4093</td>
         </tr>
+        <tr>
+            <td align="right">05</td>
+            <td align="center">00:16:11</td>
+            <td align="right">1769</td>
+            <td align="center">00:46:23</td>
+            <td align="right">3807</td>
+        </tr>
     </tbody>
 </table>
