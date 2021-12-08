@@ -98,5 +98,12 @@ Here you will find all my results for this year.
             <td align="center">00:39:26</td>
             <td align="right">8887</td>
         </tr>
+        <tr>
+            <td align="right">08</td>
+            <td align="center">00:19:34</td>
+            <td align="right">5611</td>
+            <td align="center">01:14:34</td>
+            <td align="right">3098</td>
+        </tr>
     </tbody>
 </table>
