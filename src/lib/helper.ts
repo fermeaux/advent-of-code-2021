@@ -44,3 +44,9 @@ export function sortStringKeys (map: object): object {
 export function sortCharacters (str: string): string {
   return str.split('').sort().join('')
 }
+
+export function isValidBoardDirection (board: any[][], point: { x: number, y: number }, dir: {x: number, y: number}): boolean {
+  const newX = point.x + dir.x
+  const newY = point.y + dir.y
+  return (newX >= 0 && newX < board[0].length) && (newY >= 0 && newY < board.length)
+}
