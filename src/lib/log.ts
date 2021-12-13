@@ -26,7 +26,7 @@ export class Logger {
     console.log(`# ${spaceBefore}${this.context}${spaceAfter} #`)
   }
 
-  private printBar (): void {
+  printBar (): void {
     console.log('############################################################')
   }
 }
