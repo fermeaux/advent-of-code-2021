@@ -50,3 +50,7 @@ export function isValidBoardDirection (board: any[][], point: { x: number, y: nu
   const newY = point.y + dir.y
   return (newX >= 0 && newX < board[0].length) && (newY >= 0 && newY < board.length)
 }
+
+export function dec2bin (dec) {
+  return (dec >>> 0).toString(2)
+}
