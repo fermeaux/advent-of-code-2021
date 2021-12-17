@@ -154,5 +154,19 @@ Here you will find all my results for this year.
             <td align="center">01:22:17</td>
             <td align="right">2765</td>
         </tr>
+        <tr>
+            <td align="right">16</td>
+            <td align="center">01:16:20</td>
+            <td align="right">2479</td>
+            <td align="center">16:11:58</td>
+            <td align="right">15722</td>
+        </tr>
+        <tr>
+            <td align="right">17</td>
+            <td align="center">01:02:37</td>
+            <td align="right">4128</td>
+            <td align="center">01:28:26</td>
+            <td align="right">4169</td>
+        </tr>
     </tbody>
 </table>
